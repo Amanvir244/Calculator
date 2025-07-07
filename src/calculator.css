@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f2f2f2;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.calc-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+  margin-top: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+
+.calc {
+  width: 320px;
+  background-color: #2c2c2c;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.calc-header {
+  display: flex;
+  padding: 10px;
+  background-color: #3a3a3a;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.red { background: #ff5f57; }
+.yellow { background: #ffbd2e; }
+.green { background: #28c840; }
+
+
+.input-box {
+  text-align: right;
+  color: white;
+  font-size: 40px;
+  padding: 20px;
+  background-color: #2c2c2c;
+}
+
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+  font-size: 24px;
+  padding: 20px;
+  border: 1px solid #444;
+  color: white;
+  background: #4e4e4e;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #666;
+}
+
+.orange {
+  background-color: #f1a33c;
+  color: white;
+}
+
+.gray {
+  background-color: #a5a5a5;
+  color: black;
+}
+
+.dark {
+  background-color: #333;
+  color: white;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.buttons button:nth-child(4n) {
+  background: #ff9500;
+  color: white;
+}
+
+
+.history {
+  width: 200px;
+  background: #fafafa;
+  border-left: 1px solid #ccc;
+  padding: 20px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.history li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.clear-history {
+  margin-top: 15px;
+  padding: 8px;
+  font-size: 0.85rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
